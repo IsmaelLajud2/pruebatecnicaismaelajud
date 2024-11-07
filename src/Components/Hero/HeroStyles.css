@@ -1,0 +1,64 @@
+.membership-section {
+    max-width: 1360px;
+    margin: 0 auto;
+    height: 354px;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #7953DC 0%, #3AAAD9 100%);
+}
+
+.membership-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    margin-left: 80px;
+}
+
+.membership-h1 {
+    font-size: 45px;
+    color: #ffff;
+    font-weight: 700;
+
+
+
+}
+
+.membership-button {
+    display: flex;
+    border: none;
+    gap: 12px;
+}
+
+.suscribe-button {
+    padding: 12px 30px 12px 30px;
+    border-radius: 40px;
+    border: none;
+    background-color: #7b6bde;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+.find-plan-button {
+    padding: 12px 30px 12px 30px;
+    border-radius: 40px;
+    border: 1px solid white;
+    background-color: #6e62dc;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.client-imagen {
+    width: 507px;
+    height: 355px;
+    object-fit: cover;
+
+}

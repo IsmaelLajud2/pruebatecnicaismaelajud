@@ -1,0 +1,23 @@
+.filters-container {
+    color: white;
+    display: flex;
+    padding: 30px 0 40px 90px;
+    flex-direction: row;
+    align-items: center;
+    gap: 84px;
+    width: 594px;
+    height: 28px;
+}
+
+.filter-section {
+    gap: 84px;
+
+
+}
+
+.filter-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 23px;
+}
