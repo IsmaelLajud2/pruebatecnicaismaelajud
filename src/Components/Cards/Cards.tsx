@@ -1,11 +1,8 @@
 import Playlist from '../PlayList/Playlist'
-import CartSvg from '../Svg/CartSvg'
-import HandShakeSvg from '../Svg/HandShakeSvg'
-import HeartSvg from '../Svg/HeartSvg'
 import './CardStyles.css'
-import FiltersIcons from './FilterIcon/FiltersIcons'
 
-const optionMenu=[
+
+const optionMenu :string[]= [
     "Music",
     "Collectibles",
     "Utility"
@@ -15,9 +12,12 @@ const Cards :React.FC = () => {
 
     const playlistId:string=import.meta.env.VITE_API_PLAYLISTID || ""
    
-
-    if (!playlistId ) {
-        return <div>Error: La información de la playlist o el token no está disponible.</div>;
+    if (!playlistId) {
+        return (
+          <div style={{ color: "red", fontWeight: "bold" }}>
+            Error: La información de la playlist o el token no está disponible.
+          </div>
+        );
       }
   return (
     <section className='music-section'>

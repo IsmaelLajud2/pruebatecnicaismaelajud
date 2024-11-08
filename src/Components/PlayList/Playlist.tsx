@@ -14,9 +14,11 @@ const Playlist: React.FC<PlaylistProps> = ({ playlistId}) => {
   const { data, error, isLoading, isError } = useSpotifyPlaylist(playlistId);
 
   if (isLoading) return <LoadingSpinner />;
-  if (isError && error instanceof Error) return <div>{`Error: ${error.message}`}</div>;
 
-  // Limitar solo a las primeras 5 canciones de la playlist
+  if (isError && error instanceof Error) {
+    return <div style={{color:"red" ,fontWeight:"bold"}}>{`Error: ${error.message}`}</div>};
+
+ 
   const limitedTracks = data?.tracks.items.slice(0, 5);
 
   return (
