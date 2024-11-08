@@ -23,11 +23,11 @@ const NavbarButtons = () => {
     <ul className="navlist">
         <li className="item-navlist"><span className='home-svg'><HomeSvg/> </span> Home</li>
         {
-          navbutton.map((item) =>(
-            <li className='item-navlist'>{item.title}
+          navbutton.map((item,i) =>(
+            <li key={i} className='item-navlist'>{item.title}
             {
               item.imagen ? 
-              <img  src={item.imagen}  className='avatar-img'></img>
+              <img  src={item.imagen}  className='avatar-img' alt='avataruser-profile-imagen'></img>
             :<></>}
             </li>
             

@@ -4,6 +4,7 @@
     padding: 30px 0 40px 90px;
     flex-direction: row;
     align-items: center;
+
     gap: 84px;
     width: 594px;
     height: 28px;
@@ -20,4 +21,20 @@
     align-items: center;
     list-style: none;
     gap: 23px;
+    font-family: "DM Sans", sans-serif;
+    color: #BCBCBC;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+@media (max-width:600px) {
+    .filters-container {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        padding: 30px 0 40px 40px
+    }
 }

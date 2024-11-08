@@ -1,0 +1,58 @@
+.playlist-container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.playlist-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 38px;
+    list-style: none;
+    color: white;
+    padding: 0;
+}
+
+@media (max-width: 1030px) {
+    .playlist-list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    .playlist-container {
+        overflow-x: auto;
+
+        display: flex;
+    }
+
+    .playlist-list {
+        display: flex;
+        gap: 16px;
+        padding: 30px 16px 16px 16px;
+        list-style: none;
+        color: white;
+        height: 300px;
+    }
+
+    .playlist-content {
+        flex: 0 0 auto;
+
+
+    }
+
+    .playlist-container::-webkit-scrollbar {
+        display: none;
+
+    }
+
+    .playlist-container {
+        scrollbar-width: none;
+
+    }
+}

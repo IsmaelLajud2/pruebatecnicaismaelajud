@@ -1,0 +1,140 @@
+.content-wrapper {
+    width: 242px;
+    height: 193px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.playlist-content {
+    background-color: #211626;
+    height: 292px;
+    border-radius: 16px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.playlist-content:hover {
+    transform: scale(1.05);
+
+}
+
+.playlist-content:hover .icon-wrapper {
+    opacity: 1;
+}
+
+.song-imagen {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.artist-name {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Raleway;
+    padding-top: 10px;
+    padding-left: 19px;
+
+}
+
+.username-info {
+    display: flex;
+    align-items: center;
+    padding-left: 19px;
+    gap: 4px;
+    padding-top: 2px;
+}
+
+.added-username {
+    font-size: 13px;
+    font-weight: 400;
+    align-items: center;
+    align-content: center;
+}
+
+.user-profile-photo {
+    width: 16px;
+    height: 16px;
+
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    background: #322638;
+    width: 80%;
+    z-index: 3;
+    transform: translateY(20%);
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icon-button {
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+
+.icon-button:nth-child(1):hover {
+    color: #FFA500;
+
+}
+
+
+.icon-button:nth-child(2):hover {
+    color: #00BFFF;
+
+}
+
+
+.icon-button:nth-child(3):hover {
+    color: #ff0505;
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .artist-name {
+        font-size: 18px;
+
+    }
+
+    .added-username {
+        font-size: 12px;
+
+    }
+
+    .playlist-content:hover {
+        transform: scale(1);
+    }
+
+    .card-buttons {
+        transform: translateY(20%);
+        transition: none;
+    }
+
+    .icon-wrapper {
+        opacity: 1;
+        transition: none;
+    }
+
+}
