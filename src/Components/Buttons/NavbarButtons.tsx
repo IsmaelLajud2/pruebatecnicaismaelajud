@@ -1,8 +1,13 @@
 import '../Nav/NavbarStyles.css';
 import HomeSvg from '../Svg/HomeSvg';
-import { NavButton } from '../Types/NavButton.interface';
+
 
 const NavbarButtons = () => {
+
+  interface NavButton {
+    title?: string;
+    imagen?: string;
+  }
   const navbutton: NavButton[] = [
     { title: "Descubrir" },
     { title: "Favoritos" },
