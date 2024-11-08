@@ -4,17 +4,17 @@ import compression from 'vite-plugin-compression';
 export default defineConfig({
   plugins: [
     compression({
-      algorithm: 'gzip',  // El algoritmo de compresión
-      threshold: 10240,   // Comprime archivos que tengan más de 10KB
-      ext: '.gz',         // La extensión para los archivos comprimidos
-      verbose: true,      // Muestra información detallada en la consola
+      algorithm: 'gzip', 
+      threshold: 10240,   
+      ext: '.gz',         
+      verbose: true,      
     }),
   ],
   build: {
-    // Aquí es donde habilitamos la minificación de JavaScript
-    minify: 'esbuild', // O también puedes usar 'terser' si prefieres
-    target: 'es2015',   // Asegura que el código se compile para una versión moderna de JavaScript
+  
+    minify: 'esbuild', 
+    target: 'es2015',   
     chunkSizeWarningLimit: 500,
-    cssCodeSplit: true,  // Limita el tamaño de los archivos antes de mostrar advertencias
+    cssCodeSplit: true, 
   },
 });
