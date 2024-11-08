@@ -1,7 +1,6 @@
 import '../Nav/NavbarStyles.css';
 import HomeSvg from '../Svg/HomeSvg';
 
-
 const NavbarButtons = () => {
 
   interface NavButton {
